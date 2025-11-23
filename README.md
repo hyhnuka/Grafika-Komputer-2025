@@ -1,13 +1,8 @@
-# WebGL 3D Renderer: H - A - 8
+### WebGL 3D Renderer: H - A - 8
 
+https://github.com/user-attachments/assets/795b45a6-648f-40b8-b737-0b601ec5c153
 
-
-
-
-Nama: Haliza Nur Kamila Apalwan
-NRP : 5025231038
-
-## ✨ Fitur
+## Fitur
 
 * **Pemodelan 3D dari Primitif**: Karakter dibangun menggunakan primitif geometri (prisma/kubus) yang didefinisikan oleh *array vertex*.
 * **Pewarnaan Gradasi Estetis**:
