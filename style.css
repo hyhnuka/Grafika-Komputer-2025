@@ -1,0 +1,62 @@
+/* Reset default margin */
+body {
+    background-color: #121212; /* Dark Mode background */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.canvas-container {
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.15); /* Glow Effect */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    border-radius: 12px;
+    background: radial-gradient(circle, #1e1e1e 0%, #000000 100%);
+}
+
+.instruction-box {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 50px;
+    color: #aaa;
+    font-size: 0.9rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.instruction-box:hover {
+    color: #fff;
+    border-color: #555;
+    transform: translateY(-2px);
+}
+
+span.key {
+    background: #333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: 1px solid #444;
+}

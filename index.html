@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL HA8 </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="main()">
+    <h1>WEBGL 3D • HA8</h1>
+    
+    <div class="canvas-container">
+        <canvas id="myCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <div class="instruction-box">
+        Klik di mana saja atau tahan tombol <span class="key">Spasi</span> untuk menghentikan rotasi
+    </div>
+
+    <script id="vertexShaderCode" type="notjs">
+        attribute vec3 aPosition;
+        attribute vec3 aColor;
+        attribute vec3 aNormal; 
+
+        uniform mat4 uProj;
+        uniform mat4 uView;
+        uniform mat4 uModel;
+        uniform mat3 uNormalMatrix; 
+
+        varying vec3 vColor;
+        varying vec3 vNormal; 
+        
+        void main(){
+            // Hitung posisi titik
+            gl_Position = uProj * uView * uModel * vec4(aPosition, 1.0);
+            
+            // Teruskan warna dan normal ke fragment shader
+            vColor = aColor;
+            
+            // Rotasi normal mengikuti object agar pencahayaan akurat saat berputar
+            vNormal = normalize(uNormalMatrix * aNormal);
+        }
+    </script>
+    
+    <script id="fragmentShaderCode" type="notjs">
+        precision mediump float;
+        varying vec3 vColor;
+        varying vec3 vNormal;
+
+        void main(){
+            // 1. Ambient Light 
+            float ambientStrength = 0.3;
+            vec3 ambient = ambientStrength * vec3(1.0, 1.0, 1.0);
+
+            // 2. Diffuse Light 
+            // Arah cahaya datang dari atas kanan depan
+            vec3 lightDir = normalize(vec3(0.8, 1.0, 0.8)); 
+            
+            float diff = max(dot(vNormal, lightDir), 0.0);
+            vec3 diffuse = diff * vec3(1.0, 1.0, 1.0);
+
+            vec3 finalLight = ambient + diffuse;
+            
+            gl_FragColor = vec4(vColor * finalLight, 1.0);
+        }
+    </script>
+
+    <script type="text/javascript" src="gl-matrix-min.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="IOHandler.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
