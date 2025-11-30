@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/795b45a6-648f-40b8-b737-0b601ec5c153
 
 1.  **Clone repositori ini:**
     ```bash
-    git clone [https://github.com/username/repo-name.git](https://github.com/username/repo-name.git)
+    git clone https://github.com/hyhnuka/Grafika-Komputer-2025.git
     ```
 2.  **Buka proyek:**
     Cukup buka file `index.html` untuk di run.
