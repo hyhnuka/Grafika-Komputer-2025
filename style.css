@@ -1,6 +1,6 @@
-/* Reset default margin */
+
 body {
-    background-color: #121212; /* Dark Mode background */
+    background-color: #121212; 
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     margin: 0;
