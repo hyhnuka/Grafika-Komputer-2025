@@ -33,13 +33,10 @@
         varying vec3 vNormal; 
         
         void main(){
-            // Hitung posisi titik
             gl_Position = uProj * uView * uModel * vec4(aPosition, 1.0);
             
-            // Teruskan warna dan normal ke fragment shader
             vColor = aColor;
             
-            // Rotasi normal mengikuti object agar pencahayaan akurat saat berputar
             vNormal = normalize(uNormalMatrix * aNormal);
         }
     </script>
