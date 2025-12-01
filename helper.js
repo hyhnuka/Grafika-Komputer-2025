@@ -1,4 +1,3 @@
-// helper.js (tetap sama seperti yang kamu berikan)
 function translation(dx, dy, dz, gl, program){
     var forMatrix = new Float32Array([
         1.0, 0.0, 0.0, 0.0,
