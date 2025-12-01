@@ -49,74 +49,27 @@ var vertices = [
 ];
 
 var colors = [
-    // // WARNA H
-    // // Prisma Kiri H (Biru)
-    // 0.5, 0.5, 1.0,  0.5, 0.5, 1.0,  0.5, 0.5, 1.0,  0.5, 0.5, 1.0,
-    // 0.4, 0.4, 0.9,  0.4, 0.4, 0.9,  0.4, 0.4, 0.9,  0.4, 0.4, 0.9,
-    // // Prisma Kanan H (Hijau)
-    // 0.5, 1.0, 0.5,  0.5, 1.0, 0.5,  0.5, 1.0, 0.5,  0.5, 1.0, 0.5,
-    // 0.4, 0.9, 0.4,  0.4, 0.9, 0.4,  0.4, 0.9, 0.4,  0.4, 0.9, 0.4,
-    // // Prisma Tengah H (Merah)
-    // 1.0, 0.5, 0.5,  1.0, 0.5, 0.5,  1.0, 0.5, 0.5,  1.0, 0.5, 0.5,
-    // 0.9, 0.4, 0.4,  0.9, 0.4, 0.4,  0.9, 0.4, 0.4,  0.9, 0.4, 0.4,
-
-    // // WARNA A
-    // // Kaki Kiri A (Kuning)
-    // 1.0, 0.8, 0.2,  1.0, 0.8, 0.2,  1.0, 0.8, 0.2,  1.0, 0.8, 0.2,
-    // 0.9, 0.7, 0.1,  0.9, 0.7, 0.1,  0.9, 0.7, 0.1,  0.9, 0.7, 0.1,
-    // // Kaki Kanan A (Oranye)
-    // 1.0, 0.6, 0.2,  1.0, 0.6, 0.2,  1.0, 0.6, 0.2,  1.0, 0.6, 0.2,
-    // 0.9, 0.5, 0.1,  0.9, 0.5, 0.1,  0.9, 0.5, 0.1,  0.9, 0.5, 0.1,
-    // // Palang Tengah A (Kuning Muda)
-    // 1.0, 1.0, 0.5,  1.0, 1.0, 0.5,  1.0, 1.0, 0.5,  1.0, 1.0, 0.5,
-    // 0.9, 0.9, 0.4,  0.9, 0.9, 0.4,  0.9, 0.9, 0.4,  0.9, 0.9, 0.4,
-
-
-    
-    // // WARNA 8 (Ungu)
-    // // 1. Top Bar
-    // 0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,
-    // 0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,
-    // // 2. Middle Bar
-    // 0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,
-    // 0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,
-    // // 3. Bottom Bar
-    // 0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,
-    // 0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,
-    // // 4. Top-Left Vertical
-    // 0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,
-    // 0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,
-    // // 5. Top-Right Vertical
-    // 0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,
-    // 0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,
-    // // 6. Bottom-Left Vertical
-    // 0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,
-    // 0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,
-    // // 7. Bottom-Right Vertical
-    // 0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,  0.8, 0.6, 1.0,
-    // 0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9,  0.7, 0.5, 0.9
-
     // ==========================
-    // HURUF H (Ocean Gradient)
+    // HURUF H
     // ==========================
     
-    // Prisma Kiri H (Sisi Depan - Gradasi Cyan ke Biru Laut)
+    // Prisma Kiri H 
     0.0, 0.8, 1.0,   0.0, 0.8, 1.0,   // Top: Cyan Terang
     0.0, 0.2, 0.6,   0.0, 0.2, 0.6,   // Bottom: Biru Gelap
     
-    // Prisma Kiri H (Sisi Belakang - Shadow - Biru Gelap Pekat)
+    // Prisma Kiri H 
     0.0, 0.3, 0.5,   0.0, 0.3, 0.5,   
     0.0, 0.1, 0.3,   0.0, 0.1, 0.3,
 
-    // Prisma Kanan H (Sisi Depan - Gradasi Teal ke Navy)
+    // Prisma Kanan H 
     0.2, 0.9, 0.8,   0.2, 0.9, 0.8,   // Top: Teal Terang
     0.0, 0.3, 0.4,   0.0, 0.3, 0.4,   // Bottom: Navy
     
-    // Prisma Kanan H (Sisi Belakang - Shadow)
+    // Prisma Kanan H
     0.1, 0.4, 0.4,   0.1, 0.4, 0.4,
     0.0, 0.1, 0.2,   0.0, 0.1, 0.2,
 
-    // Prisma Tengah H (Penghubung - Gradasi Horizontal Biru)
+    // Prisma Tengah H 
     0.0, 0.6, 0.9,   0.0, 0.4, 0.8,   // Left: Lebih Terang
     0.0, 0.6, 0.9,   0.0, 0.4, 0.8,   // Right: Sedikit Gelap
     
@@ -126,40 +79,37 @@ var colors = [
 
 
     // ==========================
-    // HURUF A (Sunset Gradient)
+    // HURUF A 
     // ==========================
 
-    // Kaki Kiri A (Sisi Depan - Gradasi Kuning ke Orange)
+    // Kaki Kiri A 
     1.0, 0.9, 0.3,   1.0, 0.9, 0.3,   // Top: Kuning Matahari
     1.0, 0.4, 0.1,   1.0, 0.4, 0.1,   // Bottom: Orange Senja
 
-    // Kaki Kiri A (Sisi Belakang - Shadow - Coklat Orange)
+    // Kaki Kiri A 
     0.7, 0.5, 0.2,   0.7, 0.5, 0.2,
     0.6, 0.2, 0.0,   0.6, 0.2, 0.0,
 
-    // Kaki Kanan A (Sisi Depan - Gradasi Gold ke Merah Bata)
+    // Kaki Kanan A 
     1.0, 0.8, 0.2,   1.0, 0.8, 0.2,   // Top: Gold
     0.9, 0.2, 0.1,   0.9, 0.2, 0.1,   // Bottom: Merah Bata
 
-    // Kaki Kanan A (Sisi Belakang - Shadow)
+    // Kaki Kanan A 
     0.7, 0.4, 0.1,   0.7, 0.4, 0.1,
     0.5, 0.1, 0.0,   0.5, 0.1, 0.0,
 
-    // Palang Tengah A (Sisi Depan - Gradasi Putih Gading ke Kuning)
+    // Palang Tengah A 
     1.0, 1.0, 0.8,   1.0, 1.0, 0.8,   // Top
     1.0, 0.8, 0.4,   1.0, 0.8, 0.4,   // Bottom
     
-    // Palang Tengah A (Sisi Belakang)
+    // Palang Tengah A 
     0.7, 0.7, 0.5,   0.7, 0.7, 0.5,
     0.6, 0.5, 0.2,   0.6, 0.5, 0.2,
 
 
     // ==========================
-    // ANGKA 8 (Neon/Cyberpunk)
+    // ANGKA 8 
     // ==========================
-    // Note: Bagian atas 8 diberi warna terang (Lavender), 
-    // bagian bawah 8 diberi warna gelap (Deep Purple)
-
     // 1. Top Bar (Lavender Terang)
     0.9, 0.7, 1.0,   0.9, 0.7, 1.0,
     0.8, 0.5, 1.0,   0.8, 0.5, 1.0,
