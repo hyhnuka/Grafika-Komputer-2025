@@ -40,8 +40,6 @@ function main(){
     gl.attachShader(program, fragmentShader);
     gl.linkProgram(program);
     gl.useProgram(program);
-
-    // --- Attributes Linking ---
     
     // aPosition
     gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
@@ -55,7 +53,7 @@ function main(){
     gl.vertexAttribPointer(aColor, 3, gl.FLOAT, false, 0, 0);
     gl.enableVertexAttribArray(aColor);
 
-    // aNormal (BARU)
+    // aNormal 
     gl.bindBuffer(gl.ARRAY_BUFFER, normalBuffer);
     var aNormal = gl.getAttribLocation(program, "aNormal");
     gl.vertexAttribPointer(aNormal, 3, gl.FLOAT, false, 0, 0);
